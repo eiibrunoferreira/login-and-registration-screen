@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/58e6370265.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/login-style.css">
+    <link rel="stylesheet" href="../css/recover-password-style.css">
+    <title>Tela de Login</title>
+</head>
+<body>
+    <div class="content-main">
+        <div class="content-left">
+            <div class="content-text">
+                <h1 id="text-faca-seu-login">Faça seu login</h1>
+                <i class="fa-solid fa-right-to-bracket"></i>
+            </div>
+        </div>
+        <div class="content-right">
+            <div class="form-box">
+                <h1 class="title-text-login">Login</h1>
+                <form id="form">
+                    <div class="input-box-email">
+                        <span id="icon-email"><i class="fa-solid fa-envelope"></i></span>
+                        <input required class="required" autofocus type="email" name="email" id="input-email" placeholder="Digite aqui seu email">
+                    </div>
+                    <div class="input-box-password">
+                        <span><i class="fa-solid fa-lock"></i></span>
+                        <input required class="required" type="password" name="password" id="input-password" placeholder="Digite aqui sua senha">
+                    </div>
+                    <div class="remember">
+                        <div class="remember-input-check">
+                            <input value="input-check" name="input-check" type="checkbox">
+                            <label for="input-check">Remember me</label>
+                        </div>
+                        <a href="#" onclick="openmodal()">Esqueceu a senha?</a>
+                    </div>    
+                    <div class="input-btn">
+                        <input id="btn-to-enter" type="submit" value="Entrar">
+                    </div>
+                    <div class="create-account">
+                        <p>Não tem uma conta? <a href="../html/cadastro-index.html">Inscreva-se Agora!</a></p>
+                    </div>
+                    <div class="content-separator">
+                        <span class="separator-one"></span>
+                        <span class="separator-two"></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <!--MODAL RECUPERAÇÃO DE SENHA-->
+
+
+        <div id="modalrecoverpassword" class="modalrecover">
+            <div class="content-modal">
+                <div class="content-top">
+                    <h1>Recuperar Senha</h1>
+                    <span class="content-top-close" id="btn-close-modal"><i class="fa-solid fa-xmark" id="btn-close-modal"></i></span>
+                </div>
+                <div class="content-body">
+                    <p id="text-insert-email">Para recuperar sua senha, informe abaixo seu endereço de email, que nós enviaremos um link para alteração de senha!</p>
+                    <div class="input-and-button">
+                        <div class="input-box-email-recover">
+                            <span id="icon-email-recover"><i class="fa-solid fa-envelope"></i></span>
+                            <input autofocus type="email" name="insert-email-recover" id="insert-email-recover" placeholder="Digite aqui seu email...">
+                        </div>
+                        <button class="btn-to-send-email">Enviar</button>
+                    </div>
+                </div>
+                <div class="content-botton">
+                    <div class="content-separator-recover-password">
+                        <span class="separator-one"></span>
+                        <span class="separator-two"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+<script src="../js/login-script.js"></script>
+<script src="../js/recover-password-script.js"></script>
+</html>

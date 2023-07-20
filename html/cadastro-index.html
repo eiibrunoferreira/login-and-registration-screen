@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/58e6370265.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/cadastro-style.css">
+    <title>Tela de Cadastro</title>
+</head>
+<body>
+    <div class="content-main">
+        <div class="content-body">
+            <div class="form-box">
+                <h1>Cadastro</h1>
+                <form id="form">
+                    <div class="input-box">
+                        <span><i class="fa-solid fa-user"></i></span>
+                        <input oninput="validateName(), validateNameObg()" autofocus type="text" name="user" class="input-required" id="input-user" placeholder="Seu nome de usuário">
+                    </div>
+                    <span class="span-required">Digite um nome de usuário com no minímo 5 caracteres</span>
+                    <span class="span-requiredd">Este campo é obrigatório</span>
+                    <div class="input-box">
+                        <span><i class="fa-solid fa-calendar-days"></i></span>
+                        <input onclick="validateNameObg()" type="date" name="date-nasc" class="input-required" id="input-date-nasc">
+                    </div>
+                    <span class="span-required">Este campo é obrigatório</span>
+                    <span class="span-requiredd">Este campo é obrigatório</span>
+                    <div class="input-box">
+                        <span><i class="fa-solid fa-envelope"></i></span>
+                        <input onclick="validateDate(), validateNameObg()" oninput="validateEmail(), validateEmailObg()" type="email" name="email" class="input-required" id="input-email" placeholder="Seu email">
+                    </div>
+                    <span class="span-required">Digite um email válido</span>
+                    <span class="span-requiredd">Este campo é obrigatório</span>
+                    <div class="input-box">
+                        <span><i class="fa-solid fa-lock"></i></span>
+                        <input onclick="validateDate(), validateNameObg(), validateEmailObg()" oninput="validatePassword(), validatePasswordObg()" type="password" name="password" class="input-required" id="input-password" placeholder="Crie uma sennha">
+                    </div>
+                    <span class="span-required">Crie uma senha com no mínimo 8 caracteres</span>
+                    <span class="span-requiredd">Este campo é obrigatório</span>
+                    <div class="input-box">
+                        <span><i class="fa-solid fa-lock"></i></span>
+                        <input onclick="validateNameObg(), validateDate(), validateEmailObg(), validatePasswordObg()" oninput="validatePasswordConfirm()" type="password" name="password-confirm" class="input-required" id="input-password-confirm" placeholder="Confirme sua senha">
+                    </div>
+                    <span class="span-required">As senhas criadas não coincidem</span>
+                    <div class="input-btn">
+                        <input type="submit" value="Enviar cadastro">
+                    </div>
+                </form>
+            </div>
+            <div class="content-right">
+                <h1 class="title-right">Já é cadastrado?</h1>
+                <h2 class="sub-title-right">Então <a href="../html/login-index.html">loga-se</a> agora!</h2>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+<script src="../js/cadastro-script.js"></script>
+</html>
