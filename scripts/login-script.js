@@ -7,7 +7,7 @@ const btnlogin = document.getElementById('btn-to-enter');
 function logar() {
 
     if(inputemail.value === "teste@gmail.com" && inputpassword.value === "teste123") {
-        location.href = "../home/home.html";
+        location.href = "home/home.html";
     } else if (inputemail.value === "" || inputpassword.value === "" ) {
         alert ("Preencha todos os campos vazios!")
     } else {
